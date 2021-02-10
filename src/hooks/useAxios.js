@@ -6,7 +6,7 @@ const useAxios = (BASE_URL) => {
 
   const addRes = async (path = "") => {
     const response = await axios.get(BASE_URL + path);
-    setRes(responses => [... responses, response.data])
+    setRes(responses => [...responses, response.data])
   }
 
   return [res, addRes]
